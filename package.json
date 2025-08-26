@@ -1,22 +1,25 @@
 {
-  "name": "restaurante-api",
+  "name": "restaurant-api",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "start": "node dist/src/server.js",
+    "dev": "nodemon src/server.ts",
     "build": "tsc"
   },
   "author": "ismael cezar <103972495+ismaelczar@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^5.1.0",
-    "mogoose": "^0.0.1-security"
+    "mogoose": "^0.0.1-security",
+    "multer": "^2.0.2",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.34.0",
     "@types/express": "^5.0.3",
     "@types/mongoose": "^5.11.97",
+    "@types/multer": "^2.0.0",
     "@types/node": "^24.3.0",
     "eslint": "^9.34.0",
     "globals": "^16.3.0",

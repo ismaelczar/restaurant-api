@@ -18,9 +18,20 @@ export const Order = model(
       required: true,
     },
     products: {
-      type: Schema.Types.ObjectId,
-      ref: 'Products',
       required: true,
+      type: [
+        {
+          product: {
+            type: Schema.Types.ObjectId,
+            ref: 'Product',
+            required: true,
+          },
+          quantity: {
+            type: Number,
+            default: 1,
+          },
+        },
+      ],
     },
   }),
 );
